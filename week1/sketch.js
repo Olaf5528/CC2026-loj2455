@@ -23,7 +23,7 @@ function setup() {
   randomSeed(millis());
   textSize(30);
   textFont("Serif");
-  fill(10, 255, 10);
+  fill(0);
   // calls the function to pick a quote
   pickQuote();
 }
