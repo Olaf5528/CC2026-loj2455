@@ -4,12 +4,12 @@
 const quotes = [
   { text: "Using code to explore, experiment, and create different forms of media and art.", source: "ScottTim Rodenbröker" },
   { text: "Bringing coding and art together for creative expression rather than just functionality.", source: "Coding + Art" },
-  { text: "Using code to generate and transform images, sounds, data, and other creative forms.", source: "Creating Media" },
+  { text: "Code to generate and transform images, sounds, data, and other creative forms.", source: "Creating Media" },
   { text: "A community of artists and creatives who collaborate and share ideas through code.", source: "Creative Community" },
-  { text: "Using code to translate the digital world into everyday experiences.", source: "Everyday Experience" },
-  { text: "Creative coding is NOT standard computer science", source: "Montana Media" },
+  { text: "Code to translate the digital world into everyday experiences.", source: "Everyday Experience" },
+  { text: "NOT standard computer science", source: "Montana Media" },
   { text: "If programming a game is like writing a book, creative coding is writing a poem.", source: "The Guidebook" },
-  { text: "Using code to creatively express ideas and create interactive experiences.", source: "Medium" }
+  { text: "Creatively express ideas and create interactive experiences.", source: "Medium" }
 ];
 // no need to edit anything below this line! 
 // if you have made an error, you can check your history to see what might have gone wrong
@@ -23,7 +23,7 @@ function setup() {
   randomSeed(millis());
   textSize(35);
   textFont("Serif");
-  fill(0);
+  fill(255);
   // calls the function to pick a quote
   pickQuote();
 }
