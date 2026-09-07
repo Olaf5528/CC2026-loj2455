@@ -2,14 +2,14 @@
 // this is the only part of the file you need to edit!
 
 const quotes = [
-  { text: "the intersection of programming, design, and art", source: "Scott" },
-  { text: "a chance for code to be wrong", source: "Sara" },
-  { text: "surprise, exploration, and aesthetic exploration", source: "Sally" },
-  { text: "process over results", source: "Sam" },
-  { text: "form over function", source: "Sean" },
-  { text: "iterative and experimental", source: "Scooby" },
-  { text: "a community of practice", source: "Seth" },
-  { text: "an opportunity to stick it to the man", source: "Shifty-eyed Susan" }
+  { text: "Using code to explore, experiment, and create different forms of media and art.", source: "ScottTim Rodenbröker" },
+  { text: "Bringing coding and art together for creative expression rather than just functionality.", source: "Coding + Art" },
+  { text: "Using code to generate and transform images, sounds, data, and other creative forms.", source: "Creating Media" },
+  { text: "A community of artists and creatives who collaborate and share ideas through code.", source: "Creative Community" },
+  { text: "Using code to translate the digital world into everyday experiences.", source: "Everyday Experience" },
+  { text: "Creative coding is NOT standard computer science", source: "Montana Media" },
+  { text: "If programming a game is like writing a book, creative coding is writing a poem.", source: "The Guidebook" },
+  { text: "Using code to creatively express ideas and create interactive experiences.", source: "Medium" }
 ];
 // no need to edit anything below this line! 
 // if you have made an error, you can check your history to see what might have gone wrong
@@ -21,7 +21,7 @@ function setup() {
   createCanvas(windowWidth, windowHeight);
   // Seed with millis() so each page load gives a different quote.
   randomSeed(millis());
-  textSize(40);
+  textSize(30);
   fill(10, 255, 10);
   // calls the function to pick a quote
   pickQuote();
