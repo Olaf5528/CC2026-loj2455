@@ -21,7 +21,7 @@ function setup() {
   createCanvas(windowWidth, windowHeight);
   // Seed with millis() so each page load gives a different quote.
   randomSeed(millis());
-  textSize(30);
+  textSize(35);
   textFont("Serif");
   fill(0);
   // calls the function to pick a quote
