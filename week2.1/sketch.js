@@ -25,8 +25,8 @@ function draw() {
   triangle(windowWidth/2, windowHeight/2, 0, 0, 0, windowHeight);
   
 
-  let centerX = 250;
-  let centerY = 450;
+  let centerX = windowWidth/5;
+  let centerY = windowHeight/2;
 
   fill(255);
 
