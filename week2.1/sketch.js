@@ -4,6 +4,7 @@ function setup() {
  
 }
 
+
 function draw() {
   
   noStroke();
@@ -11,21 +12,21 @@ function draw() {
   push();
   fill(255);
   translate(- 400, 0);
-  rect(windowWidth/5, windowHeight/5, windowWidth + 20 , windowHeight/5);
+  rect(windowWidth/5, windowHeight/5, windowWidth + 300 , windowHeight/5);
   pop();
   
   push();
   fill(255);
   translate( -400, 0);
-  rect(windowWidth/5 ,windowHeight/5 + 400, windowWidth + 20 , windowHeight/5);
+  rect(windowWidth/5 ,windowHeight/5 + 400 , windowWidth + 300 , windowHeight/5);
   pop();
 
   fill('blue');
   triangle(windowWidth/2, windowHeight/2, 0, 0, 0, windowHeight);
   
 
-  let centerX = 300;
-  let centerY = 500;
+  let centerX = 250;
+  let centerY = 450;
 
   fill(255);
 
