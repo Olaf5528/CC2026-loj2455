@@ -1,3 +1,34 @@
+let xPos;
+let yPos;
+
+function setup(){
+  createCanvas(windowWidth, windowHeight);
+  background(180,100, 100);
+  xPos = width/2
+  yPos = height/2
+  console.log('xPos: ' + xPos + ',yPos;'+ yPos);
+}
+
+function draw(){
+  ellipse(xPos,yPos, 100);
+  ellipse(xPos/2, yPos/2, 100);
+  ellipse(xPos + 100, yPos-30, 100);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
 let cDiam = 50;
 
 let xOffset = 50;
@@ -25,7 +56,7 @@ function draw() {
     }
   }
 }
-
+*/
 
 
 
