@@ -1,4 +1,319 @@
 
+let pMapper; // mapper instance
+let myMoon; // one face
+let mySun;
+let myCloud;
+let ballx;
+
+function setup() {
+    // p5.mapper needs WEBGL in createCanvas
+    createCanvas(windowWidth, windowHeight, WEBGL);
+    // create the mapper
+    pMapper = createProjectionMapper(this);
+    // create one quad surface
+    myMoon = pMapper.createQuadMap(400, 400);
+    mySun = pMapper.createQuadMap(400, 400);
+    myCloud = pMapper.createQuadMap(400, 400);
+    // if you want to position items in your sketch
+    // do so with the quad you're targeting
+    ballx = myCloud.width/2 + 300;
+}
+
+function draw() {
+    background(0);
+    //pass the name of a drawing function into displaySketch()
+    myMoon.displaySketch(drawMoon);
+    mySun.displaySketch(drawSun);
+    myCloud.displaySketch(drawCloud);
+}
+
+// p5.mapper passes an offscreen canvas (mySketch) into this function
+function drawMoon(mySketch) {
+  mySketch.clear();
+  mySketch.noStroke();
+
+  // Full moon
+  mySketch.fill(173, 216, 230);
+  mySketch.ellipse(myMoon.width/2, myMoon.height / 2, 150);
+
+  // Cover part of the moon to create a crescent
+  mySketch.erase();
+  mySketch.ellipse(myMoon.width/2 - 20, myMoon.height / 2 - 15, 150);
+  mySketch.noErase();
+}
+
+function drawSun(mySketch3) {
+  mySketch3.clear();
+
+  // Sun movement
+  let angle = (frameCount * 0.01) % PI;
+
+  let sunX = 200 + cos(angle) * 180;
+  let sunY = 400 - sin(angle) * 180;
+
+  // Draw the triangles around the sun
+  mySketch3.fill(255, 180, 0);
+  mySketch3.noStroke();
+
+  for (let i = 0; i < 9; i++) {
+    let rayAngle = i * TWO_PI / 9;
+
+    mySketch3.push();
+    mySketch3.translate(sunX, sunY);
+    mySketch3.rotate(rayAngle);
+
+    mySketch3.triangle(
+      -10, -55,
+       10, -55,
+        0, -85
+    );
+
+    mySketch3.pop();
+  }
+
+  // Draw the sun circle
+  mySketch3.fill(255, 220, 0);
+  mySketch3.ellipse(sunX, sunY, 80, 80);
+}
+
+function drawCloud(mySketch) {
+  mySketch.clear();
+  mySketch.noStroke();
+
+  // Draw the cloud
+  mySketch.fill(255, 255, 255);
+  mySketch.ellipse(ballx, myCloud.height / 3, 150, 100);
+  mySketch.ellipse(ballx - 50, myCloud.height / 3, 100, 80);
+  mySketch.ellipse(ballx     + 50, myCloud.height / 3, 100, 80);
+  ballx += 1;
+    if(ballx>myCloud.width+75)ballx=-75;
+}
+
+
+function keyPressed() {
+    switch (key) {
+        case "c":
+            pMapper.toggleCalibration();
+            break;
+        case "f":
+            let fs = fullscreen();
+            fullscreen(!fs);
+            break;
+        case "l":
+            pMapper.load("maps/map.json");
+            break;
+        case "s":
+            pMapper.save("map.json");
+            break;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+let pMapper; // mapper instance
+let myMoon; // one face
+
+
+function setup() {
+    // p5.mapper needs WEBGL in createCanvas
+    createCanvas(windowWidth, windowHeight, WEBGL);
+    // create the mapper
+    pMapper = createProjectionMapper(this);
+    // create one quad surface
+    myMoon = pMapper.createQuadMap(150, 150);
+    // if you want to position items in your sketch
+    // do so with the quad you're targeting
+  
+}
+
+function draw() {
+    background(0);
+    //pass the name of a drawing function into displaySketch()
+    myMoon.displaySketch(moon);
+    
+}
+
+// p5.mapper passes an offscreen canvas (mySketch) into this function
+// function myDrawing(mySketch) {
+//     // anything drawn on this surface needs 'mySketch.' in front of it
+//     mySketch.background("orange");
+//     mySketch.stroke(0);
+//     mySketch.strokeWeight(4);
+//     mySketch.line(0, 0, 400, 400); // diagonal line across the quad
+//     mySketch.noStroke();
+//     mySketch.fill(255);
+//     mySketch.ellipse(ballx, myQuad.height/2, 150);
+//     ballx += 1;
+//     if(ballx>myQuad.width+75)ballx=-75;
+// }
+
+function moon(mySketch) {
+  mySketch.background(0);
+
+  mySketch.fill(210, 220, 255);
+  mySketch.noStroke();
+
+  mySketch.ellipse(
+    mySketch.width / 2,
+    mySketch.height / 2,
+    100,
+    100
+  ); // draws your circle onto that mapping surface.
+}
+
+function keyPressed() {
+    switch (key) {
+        case "c":
+            pMapper.toggleCalibration();
+            break;
+        case "f":
+            let fs = fullscreen();
+            fullscreen(!fs);
+            break;
+        case "l":
+            pMapper.load("maps/map.json");
+            break;
+        case "s":
+            pMapper.save("map.json");
+            break;
+    }
+}
+/*
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
 let pMapper;
 let leftQuad;
 let rightQuad;
@@ -153,3 +468,4 @@ function keyPressed() {
 function windowResized() {
     resizeCanvas(windowWidth, windowHeight);
 }
+*/

@@ -35,7 +35,7 @@ function sun(){
  ellipse(0, -600,200);
 }
 
-function oceanWaves(amplitude, position, speed,hue, sat, bri){
+function oceanWaves(amplitude, position, speed,hue, sat, bri,){
 
   fill(hue, sat, bri);
   noStroke();
