@@ -1,61 +1,9 @@
-# template
+For my self-portrait, I wanted to create a black-and-white version of myself that gets distorted whenever I click the mouse.
 
----
+I started by setting up my webcam and creating a canvas. Then, I used loadPixels() and nested loops to go through every pixel and get its RGB values. I calculated the average of those values to make the video black and white.
 
-This is a README file that can be used to describe and document your assignment.
+For the glitch effect, I used glitchAmount to shift the red and blue colors in opposite directions. I also used constrain() to make sure the pixels stayed within the image. Then, I mixed the RGB colors with the grayscale values using some basic math.
 
-Markdown Cheatsheet (from [https://www.markdownguide.org/cheat-sheet/](https://www.markdownguide.org/cheat-sheet/)):
+Finally, I used mousePressed() to trigger the glitch and multiplied glitchAmount by 0.95 so the effect slowly disappears and the video goes back to black and white.
 
----
-
-# Heading1
-## Heading2
-### Heading3
-#### Heading4
-##### Heading5
-###### Heading6
-
-**bold text**
-
-*italicized text*
-
-~~strikethrough text~~
-
-Ordered List:
-1. First item
-2. Second item
-3. Third item
-
-Unordered List:
-- First item
-- Second item
-- Third item
-
-`short code block`
-
-```
-extended code block
-fun() {
-  return 0
-}
-```
-
-Link:  
-[linked text](https://www.example.com)
-
-
-Image with url:  
-![image description](https://dm-gy-6063-2024f-b.github.io/assets/homework/02/clark-espaco-modulado-00.jpg)
-
-
-Image on repo:  
-![image description](./file-name.jpg)
-
-
-To start a new line, add two spaces at the end of a line, like this:  
-this is a new line.
-
-
-To start a new paragraph, leave an empty line between two lines of text.
-
-This is a new paragraph.
+I wanted to play with the idea of how our appearance can change and become distorted, even if it's just for a moment.

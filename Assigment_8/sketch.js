@@ -1,68 +1,65 @@
-
-let video;
+let myVideo;
 let glitchAmount = 0;
+let xOff;
+let yOff;
 
 async function setup() {
-  let canvas = createCanvas(640, 480);
-  canvas.position(
-    (windowWidth - width) / 2,
-    (windowHeight - height) / 2
-  );
+  createCanvas(windowWidth, windowHeight);
   pixelDensity(1);
 
-  video = await createCapture(VIDEO);
-  video.size(640, 480);
-  video.hide();
+  myVideo = await createCapture(VIDEO);
+  myVideo.size(640, 480);
+  myVideo.hide();
 
+  xOff = (width - myVideo.width) / 2;
+  yOff = (height - myVideo.height) / 2;
 }
 
 function draw() {
-  
   background(0);
-  translate(xOff, yOff);
-  // create pixel array for the grabber
-  video.loadPixels();
 
-  if (video.pixels.length === 0) return;
+  myVideo.loadPixels();
 
-  loadPixels();
+  if (myVideo.pixels.length === 0) return;
 
-  for (let y = 0; y < height; y++) {
-    for (let x = 0; x < width; x++) {
+  for (let y = 0; y < myVideo.height; y++) {
+    for (let x = 0; x < myVideo.width; x++) {
 
-      let i = (x + y * width) * 4;
+      let i = (x + y * myVideo.width) * 4;
 
-      let r = video.pixels[i];
-      let g = video.pixels[i + 1];
-      let b = video.pixels[i + 2];
+      let r = myVideo.pixels[i];
+      let g = myVideo.pixels[i + 1];
+      let b = myVideo.pixels[i + 2];
 
       let gray = (r + g + b) / 3;
 
-      // Separate color channels when glitching
       let shift = floor(glitchAmount);
 
-      let redX = constrain(x + shift, 0, width - 1);
-      let blueX = constrain(x - shift, 0, width - 1);
+      let redX = constrain(x + shift, 0, myVideo.width - 1);
+      let blueX = constrain(x - shift, 0, myVideo.width - 1);
 
-      let redI = (redX + y * width) * 4;
-      let blueI = (blueX + y * width) * 4;
+      let redI = (redX + y * myVideo.width) * 4;
+      let blueI = (blueX + y * myVideo.width) * 4;
 
-      let red = video.pixels[redI];
-      let blue = video.pixels[blueI + 2];
+      let red = myVideo.pixels[redI];
+      let blue = myVideo.pixels[blueI + 2];
 
       let amount = constrain(glitchAmount / 40, 0, 1);
 
-      pixels[i] = lerp(gray, red, amount);
-      pixels[i + 1] = lerp(gray, g, amount);
-      pixels[i + 2] = lerp(gray, blue, amount);
-      pixels[i + 3] = 255;
+      
+      myVideo.pixels[i] = gray * (1 - amount) + red * amount;
+      myVideo.pixels[i + 1] = gray * (1 - amount) + g * amount;
+      myVideo.pixels[i + 2] = gray * (1 - amount) + blue * amount;
+      myVideo.pixels[i + 3] = 255;
     }
-  
   }
 
-  updatePixels();
+  myVideo.updatePixels();
 
-  // Slowly return to grayscale
+
+  image(myVideo, xOff, yOff);
+
+
   glitchAmount *= 0.95;
 }
 
