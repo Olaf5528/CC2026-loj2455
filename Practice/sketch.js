@@ -1,4 +1,108 @@
 
+function setup(){
+   createCanvas(windowWidth,windowHeight);
+}
+
+function draw() { 
+ background(204); 
+ ellipse(278, -100, 400, 400); 
+ ellipse(120, 100, 110, 110); 
+ ellipse(412, 60, 18, 18);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// let video;
+// let faceMesh;
+// let face = [];
+
+
+// async function setup() {
+//  createCanvas(windowWidth, windowHeight);
+
+//  //VIDEO 
+//  video = createCapture(VIDEO);
+//  video.size(640, 480);
+//  video.hide();
+
+//  faceMesh = await ml5.faceMesh({maxFaces: 1});
+//  faceMesh.detectStart(video.gotFaces);
+// }
+
+// function mousePressed(){
+//   consel.log(face);
+// }
+// function gotFaces(result){
+//   face = result;
+// }
+
+// function draw() {
+//  image(video, 0,0);
+//  if (faces.legth > 0){
+//   for(let face of faces){
+//     let face = faces[0];
+//     let keypoint = face.keypoint[1];
+//     // for ( let i = 0; face.keypoints > 0; i ++){
+//     //   let keypoint = face.keypoint[i];
+//       fill( 255, 255,0 );
+//       noStroke();
+//       circle(keypoint.x, keypoint.y, 16);
+//     // }
+//   }
+//  }
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
 let myCamera;
 
 function setup() {
@@ -43,7 +147,7 @@ function draw() {
 mImage.updatePixels();
 image(mImage, 0, 0);
 }
-
+*/
 
 
 
