@@ -2,7 +2,9 @@ For this assignment, I decided to experiment with the FaceMesh model. At first, 
 
 I took inspiration from the floating mask in Shrek, which appears in the mirror. I wanted to recreate that illusion of a face moving without an actual face being visible. Similar to what we did with the keypoints, I used beginShape() and endShape() to access all the triangles in the FaceMesh model. I removed the strokes, used a white fill, and added a black background. Finally, I offset the mask to the right so users could see both their real face and the floating mask reacting to their movements.
 
-Inspo [Shrek mask](../Content/Shrek_mask.png)
+### Inspiration
+![Shrek Mask](../Content/Shrek_mask.png)
 
-My code[Result](../Content/Floating_head.png)
+### My Result
+![Floating FaceMesh](../Content/Floating_head.png)
 
