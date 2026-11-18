@@ -4,7 +4,7 @@ let shapes = [];
 let micStarted = false;
 
 function setup() {
-  createCanvas(800, 500);
+  createCanvas(windowWidth, windowHeight);
   rectMode(CENTER);
   colorMode(HSB, 360, 100, 100);
 
