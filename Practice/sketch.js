@@ -1,15 +1,34 @@
+let mic;
+let fft;
+let shape = [];
+let micStarted = Flase; 
 
 function setup(){
-   createCanvas(windowWidth,windowHeight);
+  createCanvas(windowWidth,windowHeight);
+  rectMode(CENTER);
+  colorMode(HSB, 360, 100, 100);
+
+  // Initialize FFT with 256 frequency bins
+  fft = new p5.FFT(0.8, 256);
+
+  for (let i =0; i < 100; i++){
+    shape.push(newGeoShape); 
+  }
 }
 
 function draw() { 
  background(255); 
+
+ class GeoShape{
+  constructor(){
+  this.x =
+  this.y = 
+  this.size = random(20 - 50);
   
-  arc(90, 60, 80, 80, 0, HALF_PI);
-  arc(190, 60, 80, 80, 0, PI+HALF_PI);
-  arc(290, 60, 80, 80, PI, TWO_PI+HALF_PI);
-  arc(390, 60, 80, 80, QUARTER_PI, PI+QUARTER_PI);
+ }
+
+
+ }
  
 }
 

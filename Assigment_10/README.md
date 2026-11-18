@@ -1,61 +1,7 @@
-# template
-
+# AUDIO VISUALIZER 
+## Shapes reacting 
 ---
 
-This is a README file that can be used to describe and document your assignment.
+The visualizer features a white background with 200 randomly positioned shapes, including circles, triangles, and squares, each with different colors and sizes. Using microphone input, the program captures audio in real time and uses an FFT analyzer to separate the sound into three frequency ranges: low, mid, and high.
 
-Markdown Cheatsheet (from [https://www.markdownguide.org/cheat-sheet/](https://www.markdownguide.org/cheat-sheet/)):
-
----
-
-# Heading1
-## Heading2
-### Heading3
-#### Heading4
-##### Heading5
-###### Heading6
-
-**bold text**
-
-*italicized text*
-
-~~strikethrough text~~
-
-Ordered List:
-1. First item
-2. Second item
-3. Third item
-
-Unordered List:
-- First item
-- Second item
-- Third item
-
-`short code block`
-
-```
-extended code block
-fun() {
-  return 0
-}
-```
-
-Link:  
-[linked text](https://www.example.com)
-
-
-Image with url:  
-![image description](https://dm-gy-6063-2024f-b.github.io/assets/homework/02/clark-espaco-modulado-00.jpg)
-
-
-Image on repo:  
-![image description](./file-name.jpg)
-
-
-To start a new line, add two spaces at the end of a line, like this:  
-this is a new line.
-
-
-To start a new paragraph, leave an empty line between two lines of text.
-
-This is a new paragraph.
+Each frequency range is connected to a specific shape. Circles react to low frequencies, such as bass and kick drums; triangles respond to mid frequencies, such as vocals and instruments; and squares react to high frequencies, such as cymbals. As the sound changes, the shapes grow or shrink depending on the energy detected in their assigned frequency range. This creates a dynamic visual experience where different shapes respond independently, allowing users to see how different parts of the sound interact and change over time.
