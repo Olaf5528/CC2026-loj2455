@@ -1,39 +1,121 @@
-let mic;
-let fft;
-let shape = [];
-let micStarted = Flase; 
-
-function setup(){
-  createCanvas(windowWidth,windowHeight);
-  rectMode(CENTER);
-  colorMode(HSB, 360, 100, 100);
-
-  // Initialize FFT with 256 frequency bins
-  fft = new p5.FFT(0.8, 256);
-
-  for (let i =0; i < 100; i++){
-    shape.push(newGeoShape); 
-  }
-}
-
-function draw() { 
- background(255); 
-
- class GeoShape{
-  constructor(){
-  this.x =
-  this.y = 
-  this.size = random(20 - 50);
+async function setup() {
+  createCanvas(windowWidth, windowHeight);
   
- }
+}
 
+function draw() {
+  background(255);
 
- }
- 
+  stroke(0); // Black outline for crisp details
+  fill('#66BB6A'); // Test fill color
+
+  // Draw one footprint in the center of your screen
+  push();
+  translate(width / 2, height / 2);
+
+  drawFootprint(200); // 200px size for easy viewing
+
+  pop();
+}
+
+// Organic Footprint Module
+function drawFootprint(size) {
+
+  beginShape();
+
+  vertex(-size * 0.12, size * 0.42);
+  vertex( size * 0.12, size * 0.42);
+  vertex( size * 0.20, size * 0.10);
+  vertex( size * 0.18, -size * 0.18);
+  vertex( size * 0.08, -size * 0.32);
+  vertex(-size * 0.08, -size * 0.30);
+  vertex(-size * 0.16, -size * 0.12);
+  vertex(-size * 0.08, size * 0.12);
+
+  endShape(CLOSE);
 }
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// let mic;
+// let fft;
+// let shape = [];
+// let micStarted = flase; 
+
+// function setup(){
+//   createCanvas(windowWidth,windowHeight);
+//   rectMode(CENTER);
+//   colorMode(HSB, 360, 100, 100);
+
+//   // Initialize FFT with 256 frequency bins
+//   fft = new p5.FFT(0.8, 256);
+
+//   for (let i =0; i < 100; i++){
+//     shape.push(new GeoShape()); 
+//   }
+// }
+
+// function draw() { 
+//  background(255); 
+
+
+// }
+
+
+// class GeoShape{
+//   constructor(){
+//   this.x = (random(width));
+//   this.y = (random(height));
+//   this.type = random(['circle', 'triangle', 'rect']);
+//   this.size = random(20, 50);
+//   this.color = color(random(255), random(255), random(255)); 
+//   }
+
+//   display(){
+     
+//     if (this.type === 'circle'){
+//       circle(this.x, this.y, this.size)
+//     } else if (this.type === 'rect'){
+//       rect(this.x, this.y, this.size, this.size)
+//     } else if (this.type === 'triangle'){
+//       let s = this.size;
+//       triangle()
+//     }
+
+//   }
+
+//  }
 
 
 
@@ -86,32 +168,6 @@ function draw() {
 //   }
 //  }
 // }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

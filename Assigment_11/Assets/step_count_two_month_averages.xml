@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='utf-8'?>
+<StepCountData source="Apple Health iPhone step-count export" metric="average daily steps per two-month period" period_count="44">
+  <Period period_index="1" start_month="2019-08" end_month="2019-09" period_label="Aug 2019 – Sep 2019" average_daily_steps="9243.1" recorded_days="58" calendar_days="61" missing_days="3" />
+  <Period period_index="2" start_month="2019-10" end_month="2019-11" period_label="Oct 2019 – Nov 2019" average_daily_steps="11034.39" recorded_days="61" calendar_days="61" missing_days="0" />
+  <Period period_index="3" start_month="2019-12" end_month="2020-01" period_label="Dec 2019 – Jan 2020" average_daily_steps="9622.05" recorded_days="62" calendar_days="62" missing_days="0" />
+  <Period period_index="4" start_month="2020-02" end_month="2020-03" period_label="Feb 2020 – Mar 2020" average_daily_steps="7058.55" recorded_days="60" calendar_days="60" missing_days="0" />
+  <Period period_index="5" start_month="2020-04" end_month="2020-05" period_label="Apr 2020 – May 2020" average_daily_steps="2586.64" recorded_days="61" calendar_days="61" missing_days="0" />
+  <Period period_index="6" start_month="2020-06" end_month="2020-07" period_label="Jun 2020 – Jul 2020" average_daily_steps="4410.07" recorded_days="61" calendar_days="61" missing_days="0" />
+  <Period period_index="7" start_month="2020-08" end_month="2020-09" period_label="Aug 2020 – Sep 2020" average_daily_steps="3820.95" recorded_days="61" calendar_days="61" missing_days="0" />
+  <Period period_index="8" start_month="2020-10" end_month="2020-11" period_label="Oct 2020 – Nov 2020" average_daily_steps="2799.3" recorded_days="61" calendar_days="61" missing_days="0" />
+  <Period period_index="9" start_month="2020-12" end_month="2021-01" period_label="Dec 2020 – Jan 2021" average_daily_steps="3888.66" recorded_days="62" calendar_days="62" missing_days="0" />
+  <Period period_index="10" start_month="2021-02" end_month="2021-03" period_label="Feb 2021 – Mar 2021" average_daily_steps="3527.88" recorded_days="59" calendar_days="59" missing_days="0" />
+  <Period period_index="11" start_month="2021-04" end_month="2021-05" period_label="Apr 2021 – May 2021" average_daily_steps="3574.54" recorded_days="61" calendar_days="61" missing_days="0" />
+  <Period period_index="12" start_month="2021-06" end_month="2021-07" period_label="Jun 2021 – Jul 2021" average_daily_steps="6256.51" recorded_days="61" calendar_days="61" missing_days="0" />
+  <Period period_index="13" start_month="2021-08" end_month="2021-09" period_label="Aug 2021 – Sep 2021" average_daily_steps="11926.49" recorded_days="61" calendar_days="61" missing_days="0" />
+  <Period period_index="14" start_month="2021-10" end_month="2021-11" period_label="Oct 2021 – Nov 2021" average_daily_steps="9496.51" recorded_days="61" calendar_days="61" missing_days="0" />
+  <Period period_index="15" start_month="2021-12" end_month="2022-01" period_label="Dec 2021 – Jan 2022" average_daily_steps="8413.68" recorded_days="62" calendar_days="62" missing_days="0" />
+  <Period period_index="16" start_month="2022-02" end_month="2022-03" period_label="Feb 2022 – Mar 2022" average_daily_steps="9812.08" recorded_days="59" calendar_days="59" missing_days="0" />
+  <Period period_index="17" start_month="2022-04" end_month="2022-05" period_label="Apr 2022 – May 2022" average_daily_steps="11712.46" recorded_days="61" calendar_days="61" missing_days="0" />
+  <Period period_index="18" start_month="2022-06" end_month="2022-07" period_label="Jun 2022 – Jul 2022" average_daily_steps="3088.46" recorded_days="61" calendar_days="61" missing_days="0" />
+  <Period period_index="19" start_month="2022-08" end_month="2022-09" period_label="Aug 2022 – Sep 2022" average_daily_steps="2073.13" recorded_days="60" calendar_days="61" missing_days="1" />
+  <Period period_index="20" start_month="2022-10" end_month="2022-11" period_label="Oct 2022 – Nov 2022" average_daily_steps="5918.79" recorded_days="61" calendar_days="61" missing_days="0" />
+  <Period period_index="21" start_month="2022-12" end_month="2023-01" period_label="Dec 2022 – Jan 2023" average_daily_steps="9248.06" recorded_days="62" calendar_days="62" missing_days="0" />
+  <Period period_index="22" start_month="2023-02" end_month="2023-03" period_label="Feb 2023 – Mar 2023" average_daily_steps="10340.46" recorded_days="59" calendar_days="59" missing_days="0" />
+  <Period period_index="23" start_month="2023-04" end_month="2023-05" period_label="Apr 2023 – May 2023" average_daily_steps="10563.16" recorded_days="61" calendar_days="61" missing_days="0" />
+  <Period period_index="24" start_month="2023-06" end_month="2023-07" period_label="Jun 2023 – Jul 2023" average_daily_steps="7115.54" recorded_days="61" calendar_days="61" missing_days="0" />
+  <Period period_index="25" start_month="2023-08" end_month="2023-09" period_label="Aug 2023 – Sep 2023" average_daily_steps="1797.77" recorded_days="61" calendar_days="61" missing_days="0" />
+  <Period period_index="26" start_month="2023-10" end_month="2023-11" period_label="Oct 2023 – Nov 2023" average_daily_steps="5937.25" recorded_days="61" calendar_days="61" missing_days="0" />
+  <Period period_index="27" start_month="2023-12" end_month="2024-01" period_label="Dec 2023 – Jan 2024" average_daily_steps="8954.32" recorded_days="62" calendar_days="62" missing_days="0" />
+  <Period period_index="28" start_month="2024-02" end_month="2024-03" period_label="Feb 2024 – Mar 2024" average_daily_steps="9981.5" recorded_days="60" calendar_days="60" missing_days="0" />
+  <Period period_index="29" start_month="2024-04" end_month="2024-05" period_label="Apr 2024 – May 2024" average_daily_steps="11428.89" recorded_days="61" calendar_days="61" missing_days="0" />
+  <Period period_index="30" start_month="2024-06" end_month="2024-07" period_label="Jun 2024 – Jul 2024" average_daily_steps="8744.08" recorded_days="61" calendar_days="61" missing_days="0" />
+  <Period period_index="31" start_month="2024-08" end_month="2024-09" period_label="Aug 2024 – Sep 2024" average_daily_steps="10105.95" recorded_days="61" calendar_days="61" missing_days="0" />
+  <Period period_index="32" start_month="2024-10" end_month="2024-11" period_label="Oct 2024 – Nov 2024" average_daily_steps="9395.8" recorded_days="61" calendar_days="61" missing_days="0" />
+  <Period period_index="33" start_month="2024-12" end_month="2025-01" period_label="Dec 2024 – Jan 2025" average_daily_steps="12846.15" recorded_days="62" calendar_days="62" missing_days="0" />
+  <Period period_index="34" start_month="2025-02" end_month="2025-03" period_label="Feb 2025 – Mar 2025" average_daily_steps="11910.81" recorded_days="59" calendar_days="59" missing_days="0" />
+  <Period period_index="35" start_month="2025-04" end_month="2025-05" period_label="Apr 2025 – May 2025" average_daily_steps="9918.98" recorded_days="61" calendar_days="61" missing_days="0" />
+  <Period period_index="36" start_month="2025-06" end_month="2025-07" period_label="Jun 2025 – Jul 2025" average_daily_steps="10822.56" recorded_days="61" calendar_days="61" missing_days="0" />
+  <Period period_index="37" start_month="2025-08" end_month="2025-09" period_label="Aug 2025 – Sep 2025" average_daily_steps="9954.49" recorded_days="61" calendar_days="61" missing_days="0" />
+  <Period period_index="38" start_month="2025-10" end_month="2025-11" period_label="Oct 2025 – Nov 2025" average_daily_steps="8803.69" recorded_days="61" calendar_days="61" missing_days="0" />
+  <Period period_index="39" start_month="2025-12" end_month="2026-01" period_label="Dec 2025 – Jan 2026" average_daily_steps="8604.52" recorded_days="62" calendar_days="62" missing_days="0" />
+  <Period period_index="40" start_month="2026-02" end_month="2026-03" period_label="Feb 2026 – Mar 2026" average_daily_steps="9203.93" recorded_days="59" calendar_days="59" missing_days="0" />
+  <Period period_index="41" start_month="2026-04" end_month="2026-05" period_label="Apr 2026 – May 2026" average_daily_steps="9863.84" recorded_days="61" calendar_days="61" missing_days="0" />
+  <Period period_index="42" start_month="2026-06" end_month="2026-07" period_label="Jun 2026 – Jul 2026" average_daily_steps="9422.59" recorded_days="61" calendar_days="61" missing_days="0" />
+  <Period period_index="43" start_month="2026-08" end_month="2026-09" period_label="Aug 2026 – Sep 2026" average_daily_steps="8828.41" recorded_days="61" calendar_days="61" missing_days="0" />
+  <Period period_index="44" start_month="2026-10" end_month="2026-11" period_label="Oct 2026 – Nov 2026" average_daily_steps="10277.92" recorded_days="50" calendar_days="61" missing_days="11" />
+</StepCountData>
